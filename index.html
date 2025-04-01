@@ -1,0 +1,198 @@
+<!-- 
+Rendu HTML n1:
+Enoncé :
+    Créer une page HTML pour présenter une personne (soi-même ou une autre personne) en utilisant diverses balises HTML structurantes et sémantiques. Le but est de construire un document bien organisé en utilisant les balises appropriées.
+    Créer un fichier HTML sur VSCode (par exemple, presentation.html).
+    Ajouter la structure de base d'un fichier HTML
+    Ajouter un en-tête à la page qui contiendra :
+    Un titre principal avec le nom de la personne.
+    Une phrase d’introduction ou une citation dans un paragraphe.
+    Créer une section principale comprenant plusieurs sous-sections pour organiser les différentes parties de la présentation.
+        a) Présentation générale :
+            Créer une première section avec un sous-titre pour présenter la personne (nom, âge, profession, ville, etc.).
+        b) Loisirs et intérêts :
+            Dans une nouvelle section, décrire les hobbies ou centres d’intérêt de la personne en utilisant une liste non ordonnée.
+        c) Parcours professionnel ou académique :
+            Ajouter une section avec une liste ordonnée pour détailler les étapes importantes du parcours professionnel ou académique.
+        d) Compétences ou informations supplémentaires :
+            Créer une autre section pour inclure des informations supplémentaires comme les compétences, les langues parlées, etc., en utilisant un tableau.
+    Ajouter un pied de page avec le nom de la personne et un lien vers un site web ou un réseau social.
+    Utiliser des balises sémantiques comme <article>, <aside>, ou d'autres, si pertinent, pour structurer la page de manière encore plus précise.
+    Bonus :
+        Ajouter des images avec des légendes
+    Ajouter des citations plus stylées. 
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Cristiano Ronaldo</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Cristiano Ronaldo</h1>
+        <p>Presentation de le meilleur joueur de football du monde!</p>
+        <aside>
+            <img src="img/cr7.jpg" alt="Cristiano" width="140" height="180">
+        </aside>
+
+        <nav>
+            <h2 id="dropdown"> Cherche ici</h2>
+            <ul>
+                <li><a href="#Qui">Qui est-ce?</a></li>
+                <li><a href="#loisir">Loisirs et interets!</a></li>
+                <li>
+                    <a href="#pPro">Parcours Professionnel</a>
+                    <ul>
+                        <li><a href="#pJr">Parcours Juniour</a></li>
+                        <li><a href="#pSr">Parcours Senior</a></li>
+                        <li><a href="#pSN">Sélection Nationale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#video">Highlight</a></li>
+                <li><a href="#tableau">Informations supplémentaires!</a></li>
+                <li><a href="#reseauS">Réseaux social</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+        <!-- Ce qui -->
+        <section>
+            <h2 id="Qui">Qui est-ce?</h2>
+            <p>Nom: Cristiano Ronaldo dos Santos Aveiro</p>
+            <p>Il est né: Funchal, Madeira, Portugal (5 février 1985)</p>
+            <p>Age: 40 Ans</p>
+            <p>Profession: Footballeur</p>
+            <p>Position: Attaquant</p>
+            <p>Pied Fort: Droit</p>
+        </section>
+
+        <!-- Loisirs et interets -->
+        <section>
+            <h2 id="loisir">Loisirs et interets!</h2>
+            <ul>
+                <li>
+                    Joue football
+                </li>
+                <li>
+                    Aller à la salle de sport
+                </li>
+                <li>
+                    Entraînement de football
+                </li>
+                <li>
+                    Etre en famille
+                </li>
+            </ul>
+        </section>
+
+        <!-- Parcours Profesionnel -->
+        <aside>
+            <section>
+                <h2 id="pPro">Parcours Professionnel</h2>
+                <ol>
+                    <h3 id="pJr">Parcours Junior</h3>
+                    <li>CF Andorinha (1992-1995)</li>
+                    <li>CD Nacional (1995-1997)</li>
+                    <li>Sporting CP (1997-2002)</li>
+                </ol>
+                <ol>
+                    <h3 id="pSr">Parcours Senior</h3>
+                    <li>Sporting CP(2002-2003)</li>
+                    <li>Manchester United (2003-2009)</li>
+                    <li>Real Madrid (2009-2018)</li>
+                    <li>Juventus FC (2018-2021)</li>
+                    <li>Manchester United (2021-2022)</li>
+                    <li>Al-Nassr FC (2023-)</li>
+                </ol>
+                <ol>
+                    <h3 id="pSN">Sélection Nationale</h3>
+                    <li>Portugal Sub15 (2001)</li>
+                    <li>Portugal Sub17 (2001-2002)</li>
+                    <li>Portugal Sub20 (2003)</li>
+                    <li>Portugal Sub21 (2002-2003)</li>
+                    <li>Portugal Sub23 (2004)</li>
+                    <li>Portugal (2003-)</li>
+                </ol>
+            </section>
+        </aside>
+
+        <!-- Video -->
+        <section>
+            <H2 id="video">Highlight</H2>
+            <table>
+                <tr>
+                    <th>
+                        <video width="640" height="360" controls>
+                            <source src="video/Highlight_CR7.mp4" type="video/mp4">
+                        </video>
+                    </th>
+                    <td>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/mmeLCAP74KA"
+                            title="Cristiano Ronaldo 100 Legendary Goals Impossible To Forget" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Informations supplémentaires  -->
+        <section>
+            <table style="width: 55%;" id="tableau">
+                <H3>Informations supplémentaires!</H3>
+                <tr>
+                    <th>Les Trophées</th>
+                    <th>Stats</th>
+                </tr>
+                <tr>
+
+                    <td>5 x <a href="https://en.wikipedia.org/wiki/UEFA_Champions_League" target="_blank">UEFA Champions
+                            League</a></td>
+                    <td>Numero de jeux: 1273</td>
+                </tr>
+                <tr>
+
+                    <td>7 x Championnats Nationaux (<a href="https://en.wikipedia.org/wiki/Premier_League"
+                            target="_blank">Premier League</a>, <a
+                            href="https://fr.wikipedia.org/wiki/Championnat_d%27Espagne_de_football" target="_blank">La
+                            Liga</a>, <a href="https://fr.wikipedia.org/wiki/Championnat_d%27Italie_de_football"
+                            target="_blank">Serie A</a>)</td>
+                    <td>Buts: 929</td>
+                </tr>
+                <tr>
+
+                    <td>1 x <a href="https://en.wikipedia.org/wiki/UEFA_European_Championship" target="_blank">UEFA
+                            European
+                            Championship</a></td>
+                    <td>Passes décisifs: 300</td>
+                </tr>
+                <tr>
+
+                    <td>5 x <a href="https://fr.wikipedia.org/wiki/Ballon_d%27or" target="_blank">Ballon d'or</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h2 id="reseauS">Cristiano Ronaldo</h2>
+        <a href="https://www.instagram.com/cristiano" target="_blank"> Instagram </a>
+        <br>
+        <a href="https://www.facebook.com/Cristiano" target="_blank"> Facebook</a>
+        <br>
+        <a href="https://www.cristianoronaldo.com/#cr7" target="_blank"> Official Site</a>
+        <br>
+        <a href="https://www.youtube.com/@cristiano" target="_blank"> Youtube</a>
+    </footer>
+</body>
+
+</html>

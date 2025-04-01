@@ -1,0 +1,21 @@
+h1 {
+      text-align: center;
+      color: white;
+}
+
+
+td {
+      text-align: left;
+      padding: 5px;
+}
+
+th {  
+      text-align: center;
+      padding: 5px;
+
+}
+
+#video {
+
+      text-align: center;
+}
