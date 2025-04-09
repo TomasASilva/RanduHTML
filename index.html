@@ -25,25 +25,61 @@ Enoncé :
 <!DOCTYPE html>
 <html lang="fr">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Cristiano Ronaldo</title>
+
+    <title>Cristiano Ronaldo</title>
+    <link rel="icon" href="img/cr7logo.png" type="image/png">
 </head>
 
 <body>
-    <header>
 
-        <h1>Cristiano Ronaldo</h1>
-        <p>Presentation de le meilleur joueur de football du monde!</p>
-        <aside>
-            <img src="img/cr7.jpg" alt="Cristiano" width="140" height="180">
-        </aside>
+    <header id="header">
 
+        <img src="img/cr7.jpg" alt="Cristiano" id="img">
+        <h1 id="titre">Cristiano Ronaldo</h1>
+
+        <p id="SurTitre">Presentation de le meilleur joueur de football du monde!</p>
         <nav>
-            <h2 id="dropdown"> Cherche ici</h2>
-            <ul>
+
+            <section class="dropdown">
+                <button class="dropbtn">Recherche <img src="img/lupa.png" alt="" id="lupa"></button>
+                <ul id="dropdown-content">
+                    <li><a href="#Qui">Qui est-ce?</a></li>
+                    <li><a href="#loisir">Loisirs et interets!</a></li>
+                    <!-- <section class="dropdown"> -->
+                    <li>
+                        <a href="#pPro">Parcours Professionnel</a>
+                        <ul>
+                            <li><a href="#pJr">Parcours Juniour</a></li>
+                            <li><a href="#pSr">Parcours Senior</a></li>
+                            <li><a href="#pSN">Sélection Nationale</a></li>
+                        </ul>
+
+                    </li>
+                    <!-- </section> -->
+                    <li><a href="#video">Highlight</a></li>
+                    <li><a href="#tableau">Informations supplémentaires!</a></li>
+                    <li><a href="#commsT">Commentaires</a></li>
+                    <li><a href="#reseauS">Réseaux social</a></li>
+
+                </ul>
+            </section>
+
+
+            <!-- <h2 id="dropdown"> Cherche ici</h2>
+            <button class="dropbtn">Passe o mouse aqui</button>
+            <ul id="dropdown-content">
                 <li><a href="#Qui">Qui est-ce?</a></li>
                 <li><a href="#loisir">Loisirs et interets!</a></li>
                 <li>
@@ -58,21 +94,29 @@ Enoncé :
                 <li><a href="#tableau">Informations supplémentaires!</a></li>
                 <li><a href="#reseauS">Réseaux social</a></li>
 
-            </ul>
-
+            </ul> -->
         </nav>
+
+        <!-- <img src="img/cr7.jpg" alt="Cristiano" width="140" height="180" id="img"> -->
+
+
+
     </header>
     <main>
 
         <!-- Ce qui -->
-        <section>
-            <h2 id="Qui">Qui est-ce?</h2>
-            <p>Nom: Cristiano Ronaldo dos Santos Aveiro</p>
-            <p>Il est né: Funchal, Madeira, Portugal (5 février 1985)</p>
-            <p>Age: 40 Ans</p>
-            <p>Profession: Footballeur</p>
-            <p>Position: Attaquant</p>
-            <p>Pied Fort: Droit</p>
+        <section id="suiCrisSec">
+            <img src="img/suiCris.jpg" alt="sui Cris" id="suiCris">
+            <div>
+                <h2 id="Qui">Qui est-ce?</h2>
+                <p><strong>Nom:</strong> Cristiano Ronaldo dos Santos Aveiro</p>
+                <p><strong>Il est né:</strong> Funchal, Madeira, Portugal (5 février 1985)</p>
+                <p><strong>Age:</strong> 40 Ans</p>
+                <p><strong>Profession:</strong> Footballeur</p>
+                <p><strong>Position:</strong> Attaquant</p>
+                <p><strong>Pied Fort:</strong> Droit</p>
+            </div>
+            
         </section>
 
         <!-- Loisirs et interets -->
@@ -95,44 +139,106 @@ Enoncé :
         </section>
 
         <!-- Parcours Profesionnel -->
-        <aside>
-            <section>
-                <h2 id="pPro">Parcours Professionnel</h2>
+        <section>
+            <h2 id="pPro">Parcours Professionnel</h2>
+            <table class="tableEquip">
+
                 <ol>
-                    <h3 id="pJr">Parcours Junior</h3>
-                    <li>CF Andorinha (1992-1995)</li>
-                    <li>CD Nacional (1995-1997)</li>
-                    <li>Sporting CP (1997-2002)</li>
+                    <tr>
+                        <th>
+                            <h3 id="pJr" class="tableP">Parcours Junior</h3>
+                        </th>
+                        <td>
+                            <li class="clubs">CF Andorinha<p class="anoP">(1992-1995)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">CD Nacional<p class="anoP">(1995-1997)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Sporting CP <p class="anoP">(1997-2002)</p>
+                            </li>
+                        </td>
+                    </tr>
                 </ol>
                 <ol>
-                    <h3 id="pSr">Parcours Senior</h3>
-                    <li>Sporting CP(2002-2003)</li>
-                    <li>Manchester United (2003-2009)</li>
-                    <li>Real Madrid (2009-2018)</li>
-                    <li>Juventus FC (2018-2021)</li>
-                    <li>Manchester United (2021-2022)</li>
-                    <li>Al-Nassr FC (2023-)</li>
+                    <tr>
+                        <th>
+                            <h3 id="pSr" class="tableP">Parcours Senior</h3>
+                        </th>
+                        <td>
+                            <li class="clubs">Sporting CP<p class="anoP">(2002-2003)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Manchester United <p class="anoP">(2003-2009)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Real Madrid <p class="anoP">(2009-2018)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Juventus FC <p class="anoP">(2018-2021)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Manchester United <p class="anoP">(2021-2022)</p>
+                            </li>
+                        </td>
+                        <td>
+                            <li class="clubs">Al-Nassr FC <p class="anoP">(2023-)</p>
+                            </li>
+                        </td>
+                    </tr>
                 </ol>
                 <ol>
-                    <h3 id="pSN">Sélection Nationale</h3>
-                    <li>Portugal Sub15 (2001)</li>
-                    <li>Portugal Sub17 (2001-2002)</li>
-                    <li>Portugal Sub20 (2003)</li>
-                    <li>Portugal Sub21 (2002-2003)</li>
-                    <li>Portugal Sub23 (2004)</li>
-                    <li>Portugal (2003-)</li>
+                    </tr>
+                    <th>
+                        <h3 id="pSN" class="tableP">Sélection Nationale</h3>
+                    </th>
+                    <td>
+                        <li class="clubs">Portugal Sub15 <p class="anoP">(2001)</p>
+                        </li>
+                    </td>
+                    <td>
+                        <li class="clubs">Portugal Sub17 <p class="anoP">(2001-2002)</p>
+                        </li>
+                    </td>
+                    <td>
+                        <li class="clubs">Portugal Sub20 <p class="anoP">(2003)</p>
+                        </li>
+                    </td>
+                    <td>
+                        <li class="clubs">Portugal Sub21 <p class="anoP">(2002-2003)</p>
+                        </li>
+                    </td>
+                    <td>
+                        <li class="clubs">Portugal Sub23 <p class="anoP">(2004)</p>
+                        </li>
+                    </td>
+                    <td>
+                        <li class="clubs">Portugal <p class="anoP">(2003-)</p>
+                        </li>
+                    </td>
+                    </tr>
                 </ol>
-            </section>
-        </aside>
+
+
+            </table>
+
+        </section>
 
         <!-- Video -->
         <section>
             <H2 id="video">Highlight</H2>
             <table>
-                <tr>
+                <tr id="videoFormat">
                     <th>
-                        <video width="640" height="360" controls>
+                        <video width="640" height="360" controls poster="img/capaVideo.png">
                             <source src="video/Highlight_CR7.mp4" type="video/mp4">
+
                         </video>
                     </th>
                     <td>
@@ -149,7 +255,7 @@ Enoncé :
         <!-- Informations supplémentaires  -->
         <section>
             <table style="width: 55%;" id="tableau">
-                <H3>Informations supplémentaires!</H3>
+                <H2>Informations supplémentaires!</H2>
                 <tr>
                     <th>Les Trophées</th>
                     <th>Stats</th>
@@ -182,16 +288,65 @@ Enoncé :
                 </tr>
             </table>
         </section>
+
+        <!-- Commentarios -->
+        <H2>Commentaires</H2>
+        <section class="fmComm">
+            <section class="formatComm">
+                <img src="img/Marcelo.jpg" alt="Marcelo" id="photo">
+                <h2>Marcelo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error recusandae provident
+                    asperiores
+                    excepturi voluptatum culpa ut facilis veritatis beatae fugiat quisquam at alias repudiandae,
+                    reiciendis
+                    deserunt consectetur quam fugit.
+                </p>
+            </section>
+            <section class="formatComm">
+                <img src="img/pepe.jpg" alt="pepe" id="photo">
+                <h2>Pepe</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error recusandae provident
+                    asperiores
+                    excepturi voluptatum culpa ut facilis veritatis beatae fugiat quisquam at alias repudiandae,
+                    reiciendis
+                    deserunt consectetur quam fugit.
+                </p>
+            </section>
+
+            <section class="formatComm">
+                <img src="img/alexFerg.jpg" alt="alexFerg" id="photo">
+                <h2>Alex Fergunson</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error recusandae provident
+                    asperiores
+                    excepturi voluptatum culpa ut facilis veritatis beatae fugiat quisquam at alias repudiandae,
+                    reiciendis
+                    deserunt consectetur quam fugit.
+                </p>
+            </section>
+        </section>
     </main>
-    <footer>
-        <h2 id="reseauS">Cristiano Ronaldo</h2>
-        <a href="https://www.instagram.com/cristiano" target="_blank"> Instagram </a>
-        <br>
-        <a href="https://www.facebook.com/Cristiano" target="_blank"> Facebook</a>
-        <br>
-        <a href="https://www.cristianoronaldo.com/#cr7" target="_blank"> Official Site</a>
-        <br>
-        <a href="https://www.youtube.com/@cristiano" target="_blank"> Youtube</a>
+    <footer id="footer">
+        <h2 id="nomPerson">Cristiano Ronaldo</h2>
+        <section id="lien">
+            <a href="https://www.instagram.com/cristiano" target="_blank"><img class="sMedia" src="img/insta.png"
+                    alt=""></a>
+
+            <a href="https://www.facebook.com/Cristiano" target="_blank"><img class="sMedia" src="img/facebook.png"
+                    alt=""></a>
+
+            <a href="https://www.cristianoronaldo.com/#cr7" target="_blank"><img class="sMedia" src="img/cr7logo.png"
+                    alt=""></a>
+
+            <a href="https://www.youtube.com/@cristiano" target="_blank"><img class="sMedia" src="img/youtube.png"
+                    alt=""></a>
+
+            <a href="#titre"> <img id="arrow" src="img/arrowUP.png"></a>
+
+            <p id="nomFoot">Tomas Silva ©</p>
+        </section>
+
     </footer>
 </body>
 
